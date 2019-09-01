@@ -47,7 +47,7 @@ import sklearn
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python 3, as it is the version I am more familiar with. In addition, as the coursework is set up with Python 3 and it seems as though the industry is moving towards Python3 more overall, I felt it better to work with 3 to save myself the trouble of having to convert to 2 and having to unlearn it later on.
 
 ### Q2. Which Python Version Installed   
 
@@ -55,7 +55,7 @@ In the Terminal:
 
 `python3 --version`
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python 3.6.8
 
  
 
