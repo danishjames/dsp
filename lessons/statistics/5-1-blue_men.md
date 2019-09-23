@@ -15,6 +15,6 @@ In order to join Blue Man Group, you have to be male between 5’10” and 6’1
 
 >> high = dist.cdf(185.4)   # 6'1"
 
->> (low, high, high-low)
+>> print(low, high, high-low)
 
 >> (0.48963902786483265, 0.8317337108107857, 0.3420946829459531)
