@@ -5,14 +5,26 @@ Use the NSFG respondent variable NUMKDHH to construct the actual distribution fo
 
 Now compute the biased distribution we would see if we surveyed the children and asked them how many children under 18 (including themselves) are in their household.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> resp = nsfg.ReadFemResp()
 
-{
-   "cell_type": "code",
-   "execution_count": 1,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    resp = nsfg.ReadFemResp()
-   ]
-  }
+>> pmf = thinkstats2.Pmf(resp.numkdhh, label='numkdhh')
+
+>> thinkplot.Pmf(pmf)
+
+>> thinkplot.Config(xlabel='Number of children', ylabel='PMF')
+
+>> biased = BiasPmf(pmf, label='biased')
+
+>> thinkplot.PrePlot(2)
+
+>> thinkplot.Pmfs([pmf, biased])
+
+>> thinkplot.Config(xlabel='Number of children', ylabel='PMF')
+
+>> pmf.Mean()
+
+Gives a mean of 1.024205155043831 for the unbiased
+
+>> biased.Mean()
+
+Gives a mean of 2.403679100664282 for the biased.
